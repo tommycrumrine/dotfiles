@@ -1,0 +1,20 @@
+[user]
+  name = Tommy Crumrine
+	email = tommy@traveljoy.com
+
+[alias]
+	co = checkout
+  s = status
+  ci = commit
+  fp = "!f() { git fetch $1 --prune; }; f"
+  p = pull
+  update-from = "!f() { git fetch $1 --prune; git merge --ff-only $1/$2 || git rebase --preserve-merges $1/$2; }; f"
+  branch-name = "!f() { git rev-parse --abbrev-ref HEAD; }; f"
+  up = "!f() { git branch -u origin/$(git branch-name); }; f"
+
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[core]
+	editor = nvim

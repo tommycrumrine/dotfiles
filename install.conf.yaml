@@ -1,0 +1,11 @@
+---
+- defaults:
+    link:
+      relink: true
+- clean:
+    "~/.config":
+      recursive: true
+- link:
+    "~/.tmux.conf": dotfiles/tmux.conf
+    "~/.config": dotfiles/config
+    "~/.gitconfig": dotfiles/gitconfig
