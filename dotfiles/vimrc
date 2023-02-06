@@ -145,45 +145,19 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-" let NERDTreeMinimalUI = 1
-" let NERDTreeDirArrows = 1
 
-" let NERDTreeAutoDeleteBuffer = 1
+" nnoremap <silent> <C-n> <cmd>Telescope file_browser<cr>
+nnoremap <silent> <C-n> <cmd>NERDTreeToggle<cr>
+nnoremap <silent> <C-f> <cmd>Telescope find_files<cr>
 
-" map <C-n> :NERDTreeToggle<CR>
+map <C-s>t :call RunCurrentSpecFile()<CR>
+map <C-s>s :call RunNearestSpec()<CR>
+map <C-s>l :call RunLastSpec()<CR>
+map <C-s>a :call RunAllSpecs()<CR>
 
-" autocmd VimEnter * NERDTree
-" autocmd BufEnter * NERDTreeMirror
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-" packadd! fzf
-" packadd! fzf.vim
-
-" nnoremap <silent> <C-f> :FZF<CR>
-
-" map <C-s>t :call RunCurrentSpecFile()<CR>
-" map <C-s>s :call RunNearestSpec()<CR>
-" map <C-s>l :call RunLastSpec()<CR>
-" map <C-s>a :call RunAllSpecs()<CR>
-
-" The Silver Searcher
-" if executable('ag')
-  " Use ag over grep
-"   set grepprg=ag\ --nogroup\ --nocolor
-
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-"   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-  " ag is fast enough that CtrlP doesn't need to cache
-"   let g:ctrlp_use_caching = 0
-" endif
-
-" bind K to grep word under cursor
-" nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
-
-" let g:prettier#autoformat = 1
-" let g:prettier#autoformat_require_pragma = 0
-" augroup Prettier
-"   autocmd!
-"   autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.gql,*.markdown,*.md,*.mdown,*.mkd,*.mkdn,*.mdx,*.vue,*.svelte,*.yml,*.yaml,*.html,*.xml noautocmd call prettier#Autoformat()
-" augroup end
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
+augroup Prettier
+  autocmd!
+  autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.gql,*.markdown,*.md,*.mdown,*.mkd,*.mkdn,*.mdx,*.vue,*.svelte,*.yml,*.yaml,*.html,*.xml noautocmd call prettier#Autoformat()
+augroup end

@@ -56,3 +56,12 @@
 [submodule "dotfiles/vim/pack/plugins/start/telescope.nvim"]
 	path = dotfiles/vim/pack/plugins/start/telescope.nvim
 	url = git@github.com:nvim-telescope/telescope.nvim.git
+[submodule "dotfiles/vim/pack/plugins/start/nvim-tree.lua"]
+	path = dotfiles/vim/pack/plugins/start/nvim-tree.lua
+	url = git@github.com:nvim-tree/nvim-tree.lua.git
+[submodule "dotfiles/vim/pack/plugins/start/telescope-file-browser.nvim"]
+	path = dotfiles/vim/pack/plugins/start/telescope-file-browser.nvim
+	url = git@github.com:nvim-telescope/telescope-file-browser.nvim.git
+[submodule "dotfiles/vim/pack/plugins/start/nerdtree"]
+	path = dotfiles/vim/pack/plugins/start/nerdtree
+	url = git@github.com:preservim/nerdtree.git
