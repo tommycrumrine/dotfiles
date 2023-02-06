@@ -44,3 +44,6 @@
 [submodule "dotfiles/vim/pack/plugins/start/vim-vue"]
 	path = dotfiles/vim/pack/plugins/start/vim-vue
 	url = git@github.com:posva/vim-vue.git
+[submodule "dotfiles/vim/pack/plugins/start/nvim-lspconfig"]
+	path = dotfiles/vim/pack/plugins/start/nvim-lspconfig
+	url = git@github.com:neovim/nvim-lspconfig.git
