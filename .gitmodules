@@ -65,3 +65,6 @@
 [submodule "dotfiles/vim/pack/plugins/start/nerdtree"]
 	path = dotfiles/vim/pack/plugins/start/nerdtree
 	url = git@github.com:preservim/nerdtree.git
+[submodule "dotfiles/vim/pack/plugins/start/vim-javascript"]
+	path = dotfiles/vim/pack/plugins/start/vim-javascript
+	url = git@github.com:pangloss/vim-javascript.git
