@@ -68,3 +68,6 @@
 [submodule "dotfiles/vim/pack/plugins/start/vim-javascript"]
 	path = dotfiles/vim/pack/plugins/start/vim-javascript
 	url = git@github.com:pangloss/vim-javascript.git
+[submodule "dotfiles/vim/pack/plugins/start/vim-rubocop"]
+	path = dotfiles/vim/pack/plugins/start/vim-rubocop
+	url = git@github.com:ngmy/vim-rubocop.git
