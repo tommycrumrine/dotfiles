@@ -5,6 +5,8 @@
 - clean:
     "~/.config":
       recursive: true
+- create:
+  - ~/.config
 - link:
     "~/.tmux.conf": dotfiles/tmux.conf
     "~/.config": dotfiles/config

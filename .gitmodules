@@ -2,9 +2,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "dotfiles/dotfiles/vim/pack/themes/start/dracula"]
-	path = dotfiles/dotfiles/vim/pack/themes/start/dracula
-	url = https://github.com/dracula/vim.git
 [submodule "dotfiles/config/fish/bass"]
 	path = dotfiles/config/fish/bass
 	url = git@github.com:edc/bass.git
@@ -68,3 +65,6 @@
 [submodule "dotfiles/vim/pack/plugins/start/vim-javascript"]
 	path = dotfiles/vim/pack/plugins/start/vim-javascript
 	url = git@github.com:pangloss/vim-javascript.git
+[submodule "dotfiles/vim/pack/themes/start/dracula"]
+	path = dotfiles/vim/pack/themes/start/dracula
+	url = https://github.com/dracula/vim.git
