@@ -74,3 +74,9 @@
 [submodule "dotfiles/vim/pack/plugins/start/vim-fugitive"]
 	path = dotfiles/vim/pack/plugins/start/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
+[submodule "dotfiles/vim/pack/plugins/start/telescope-fzf-native.nvim"]
+	path = dotfiles/vim/pack/plugins/start/telescope-fzf-native.nvim
+	url = git@github.com:nvim-telescope/telescope-fzf-native.nvim.git
+[submodule "dotfiles/vim/pack/plugins/start/telescope-live-grep-args.nvim"]
+	path = dotfiles/vim/pack/plugins/start/telescope-live-grep-args.nvim
+	url = git@github.com:nvim-telescope/telescope-live-grep-args.nvim.git

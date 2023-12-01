@@ -149,6 +149,8 @@ nnoremap <C-H> <C-W><C-H>
 " nnoremap <silent> <C-n> <cmd>Telescope file_browser<cr>
 nnoremap <silent> <C-n> <cmd>NERDTreeToggle<cr>
 nnoremap <silent> <C-f> <cmd>Telescope find_files<cr>
+nnoremap <silent> <C-g>g <cmd>Telescope live_grep<cr>
+nnoremap <silent> <C-g><C-g>  <cmd>Telescope grep_string<cr>
 
 
 " The Silver Searcher
@@ -162,9 +164,6 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
-
-" bind K to grep word under cursor
-nnoremap <C-G> :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 map <C-s>t :call RunCurrentSpecFile()<CR>
 map <C-s>s :call RunNearestSpec()<CR>
