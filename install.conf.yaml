@@ -11,6 +11,3 @@
     "~/.tmux.conf": dotfiles/tmux.conf
     "~/.config": dotfiles/config
     "~/.gitconfig": dotfiles/gitconfig
-    "~/.vimrc": dotfiles/vimrc
-    "~/.vim": dotfiles/vim
-    "~/.nvim": dotfiles/nvim
