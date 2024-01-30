@@ -65,6 +65,15 @@
 [submodule "dotfiles/vim/pack/plugins/start/vim-javascript"]
 	path = dotfiles/vim/pack/plugins/start/vim-javascript
 	url = git@github.com:pangloss/vim-javascript.git
-[submodule "dotfiles/vim/pack/themes/start/dracula"]
-	path = dotfiles/vim/pack/themes/start/dracula
-	url = https://github.com/dracula/vim.git
+[submodule "dotfiles/vim/pack/plugins/start/vim-rubocop"]
+	path = dotfiles/vim/pack/plugins/start/vim-rubocop
+	url = git@github.com:ngmy/vim-rubocop.git
+[submodule "dotfiles/vim/pack/plugins/start/vim-fugitive"]
+	path = dotfiles/vim/pack/plugins/start/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "dotfiles/vim/pack/plugins/start/telescope-fzf-native.nvim"]
+	path = dotfiles/vim/pack/plugins/start/telescope-fzf-native.nvim
+	url = git@github.com:nvim-telescope/telescope-fzf-native.nvim.git
+[submodule "dotfiles/vim/pack/plugins/start/telescope-live-grep-args.nvim"]
+	path = dotfiles/vim/pack/plugins/start/telescope-live-grep-args.nvim
+	url = git@github.com:nvim-telescope/telescope-live-grep-args.nvim.git
