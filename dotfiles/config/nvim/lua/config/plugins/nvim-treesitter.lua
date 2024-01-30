@@ -1,6 +1,9 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
+    dependencies = {
+      "RRethy/nvim-treesitter-endwise",
+    },
     event = { "BufReadPre", "BufNewFile" },
     build = ":TSUpdate",
     config = function()
@@ -14,6 +17,9 @@ return {
           enable = true
         },
         autotag = {
+          enable = true,
+        },
+        endwise = {
           enable = true,
         },
         ensure_installed = {
