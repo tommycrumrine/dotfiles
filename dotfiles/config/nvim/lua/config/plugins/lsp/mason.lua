@@ -13,7 +13,7 @@ return {
         "tsserver",
         "html",
         "lua_ls",
-        "solargraph",
+        "ruby_ls",
         "rubocop",
       },
       automatic_installation = true,
