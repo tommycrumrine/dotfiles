@@ -1,15 +1,15 @@
 return {
   "neovim/nvim-lspconfig",
   event = { "BufReadPre", "BufNewFile" },
+  dependencies = {
+    "hrsh7th/cmp-nvim-lsp",
+  },
   config = function()
     -- import lspconfig plugin
     local lspconfig = require("lspconfig")
     local opts = { noremap = true, silent = true }
 
     local on_attach = function(client, bufnr)
-      --Enable completion triggered by <c-x><c-o>
-      buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
-
       opts.buffer = bufnr
 
       opts.desc = "Show LSP references"
@@ -62,9 +62,8 @@ return {
       vim.keymap.set("n", "<space>wl", print(vim.inspect(vim.lsp.buf.list_workspace_folders, opts)))
     end
 
-    lspconfig["solargraph"].setup({
+    lspconfig["ruby_ls"].setup({
       on_attach = on_attach,
     })
-
   end
 }
