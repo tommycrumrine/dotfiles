@@ -53,7 +53,7 @@ return {
       },
     })
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
-    require('lspconfig')['ruby_ls'].setup {
+    require('lspconfig')['ruby_lsp'].setup {
       capabilities = capabilities
     }
   end,

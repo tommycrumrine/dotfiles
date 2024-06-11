@@ -1,1 +1,0 @@
-return { "ngmy/vim-rubocop" }

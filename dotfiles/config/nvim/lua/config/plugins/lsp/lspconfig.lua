@@ -62,7 +62,7 @@ return {
       vim.keymap.set("n", "<space>wl", print(vim.inspect(vim.lsp.buf.list_workspace_folders, opts)))
     end
 
-    lspconfig["ruby_ls"].setup({
+    lspconfig["ruby_lsp"].setup({
       on_attach = on_attach,
     })
   end

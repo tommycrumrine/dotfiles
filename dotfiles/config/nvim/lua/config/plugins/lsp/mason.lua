@@ -13,7 +13,7 @@ return {
         "tsserver",
         "html",
         "lua_ls",
-        "ruby_ls",
+        "ruby_lsp",
         "rubocop",
       },
       automatic_installation = true,
