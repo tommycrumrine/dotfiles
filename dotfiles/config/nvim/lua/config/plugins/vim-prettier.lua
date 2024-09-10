@@ -10,5 +10,4 @@ return {
       : augroup end
     ]]
   end,
-
 }
