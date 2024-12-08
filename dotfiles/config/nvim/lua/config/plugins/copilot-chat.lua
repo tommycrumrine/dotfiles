@@ -19,7 +19,7 @@ local prompts = {
 
 return {
   "CopilotC-Nvim/CopilotChat.nvim",
-  branch = "canary", -- Use the canary branch if you want to test the latest features but it might be unstable
+  branch = "main",
   -- version = "v2.11.0",
   -- Do not use branch and version together, either use branch or version
   dependencies = {
@@ -33,6 +33,7 @@ return {
     prompts = prompts,
     auto_follow_cursor = false, -- Don't follow the cursor after getting response
     show_help = false, -- Show help in virtual text, set to true if that's 1st time using Copilot Chat
+    chat_autocomplete = true,
     mappings = {
       -- Use tab for completion
       complete = {
@@ -67,11 +68,11 @@ return {
         normal = "gmd",
       },
       -- Show the prompt
-      show_system_prompt = {
+      show_info = {
         normal = "gmp",
       },
       -- Show the user selection
-      show_user_selection = {
+      show_context = {
         normal = "gms",
       },
       -- Show help
@@ -99,8 +100,6 @@ return {
     }
 
     chat.setup(opts)
-    -- Setup the CMP integration
-    require("CopilotChat.integrations.cmp").setup()
 
     vim.api.nvim_create_user_command("CopilotChatVisual", function(args)
       chat.ask(args.args, { selection = select.visual })
