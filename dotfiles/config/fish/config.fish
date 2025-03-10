@@ -3,6 +3,7 @@ if status is-interactive
 end
 set -x NVM_DIR ~/.nvm
 set -x EDITOR nvim
+set -x CONSOLE_USER tommy.crumrine
 nvm use default --silent
 alias vim nvim
 alias vi nvim
