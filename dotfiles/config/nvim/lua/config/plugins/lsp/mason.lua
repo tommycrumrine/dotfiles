@@ -1,7 +1,8 @@
 return {
-  "williamboman/mason.nvim",
+  "mason-org/mason-lspconfig.nvim",
   dependencies = {
-    "williamboman/mason-lspconfig.nvim",
+    { "mason-org/mason.nvim", opts = {} },
+    "neovim/nvim-lspconfig",
   },
   config = function()
     local mason = require("mason")
@@ -15,6 +16,7 @@ return {
         "lua_ls",
         "ruby_lsp",
         "rubocop",
+        "copilot",
       },
       automatic_installation = true,
     })
