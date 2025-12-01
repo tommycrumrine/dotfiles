@@ -6,4 +6,4 @@ dotfiles/config/gh/
 dotfiles/config/configstore/
 .ruby-version
 dotfiles/config/configstore/update-notifier-appcenter-cli.json
-dotfiles/config/github-copilot/hosts.json
+dotfiles/config/github-copilot/apps.json

@@ -4,7 +4,9 @@ return {
     dependencies = {
       "RRethy/nvim-treesitter-endwise",
     },
+    branch = 'master',
     event = { "BufReadPre", "BufNewFile" },
+    lazy = false,
     build = ":TSUpdate",
     config = function()
       local treesitter = require("nvim-treesitter.configs")
@@ -30,8 +32,8 @@ return {
           "yaml",
           "html",
           "css",
-          "ruby",
           "markdown",
+          "ruby",
           "lua",
           "vim",
           "vimdoc",
