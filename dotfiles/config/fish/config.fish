@@ -1,5 +1,7 @@
 eval "$(/opt/homebrew/bin/brew shellenv fish)"
+
 status --is-interactive; and rbenv init - --no-rehash fish | source
+
 set -x NVM_DIR ~/.nvm
 set -x EDITOR nvim
 set -x CONSOLE_USER tommy.crumrine
