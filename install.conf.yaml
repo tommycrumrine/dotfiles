@@ -3,11 +3,16 @@
     link:
       relink: true
 - clean:
+    "~/.claude":
+      recursive: true
     "~/.config":
       recursive: true
 - create:
   - ~/.config
+  - ~/.claude
 - link:
     "~/.tmux.conf": dotfiles/tmux.conf
     "~/.config": dotfiles/config
     "~/.gitconfig": dotfiles/gitconfig
+    "~/.claude/create-prd.md": ai-dev-tasks/create-prd.md
+    "~/.claude/generate-tasks.md": ai-dev-tasks/generate-tasks.md

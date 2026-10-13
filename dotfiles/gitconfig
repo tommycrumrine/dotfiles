@@ -1,6 +1,6 @@
 [user]
   name = Tommy Crumrine
-	email = tommy@traveljoy.com
+	email = thomascrumrine@gmail.com
 
 [alias]
 	co = checkout
@@ -18,3 +18,8 @@
 	tool = vimdiff
 [core]
 	editor = nvim
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

@@ -5,3 +5,6 @@
 [submodule "dotfiles/config/fish/bass"]
 	path = dotfiles/config/fish/bass
 	url = git@github.com:edc/bass.git
+[submodule "ai-dev-tasks"]
+	path = ai-dev-tasks
+	url = git@github.com:snarktank/ai-dev-tasks.git
